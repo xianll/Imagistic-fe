@@ -5,8 +5,7 @@ class Home extends Component {
 
   state = {
     background:[
-      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Pelican_Study.jpg',
-      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/divine_light.jpg',
+      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/divine_light.jpg','https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Pelican_Study.jpg',
       'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/_MG_5366.jpg',
       'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Theres_a_Sunset_Somewhere_x_3.jpg',
       'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Ignored.jpg'
@@ -15,12 +14,10 @@ class Home extends Component {
 
   handleImageClick = (images) => {
    console.log(this.state.counter)
+    this.setState({counter: this.state.counter + 1})
     if (this.state.counter === 4){
       this.setState({counter: 0})
     }
-    
-    this.setState({counter: this.state.counter+1})
-   
   }
 
   render() {
