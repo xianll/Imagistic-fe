@@ -19,13 +19,9 @@ class App extends Component {
 
     if (params === '/') {
       return (
-        <div>
-          <Navbar />
+        <>
           <Home />
-          <AboutMe />
-          <Contact />
-          <Footer />
-        </div>
+        </>
       )
     } else if (params === '/gallery') {
       return(
