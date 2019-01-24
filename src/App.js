@@ -3,13 +3,15 @@ import React, { Component } from 'react';
 import './App.css';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
-import Dashboard from './components/Dashboard';
+import DashSidebar from './components/DashSidebar';
 import Footer from './components/Footer';
 import Gallery from './components/Gallery';
 import GallerySidebar from './components/GallerySidebar';
 import Home from './components/Home';
 import Login from './components/Login';
+import ManageImages from './components/ManageImages'
 import Navbar from './components/Navbar';
+import Upload from './components/Upload'
 
 
 class App extends Component {
@@ -37,8 +39,20 @@ class App extends Component {
       )
     } else if (params ==='/admin/login') {
       return <Login />
-    } else if (params ==='/admin/dashboard') {
-      return <Dashboard />
+    } else if (params ==='/admin/upload') {
+      return(
+      <div>
+        <DashSidebar />
+        <Upload />
+      </div>
+      )
+    } else if (params === '/admin/manage') {
+      return(
+        <div>
+          <DashSidebar />
+          <ManageImages />
+        </div>
+      )
     } else {
       return <h1>Error</h1>
     }

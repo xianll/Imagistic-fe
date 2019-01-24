@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 
 
-class Dashboard extends Component {
+class DashSidebar extends Component {
   render() {
     return (
       <div className="App">
-        This is the Dashboard Page.
+        This is the DashSidebar Page.
       </div>
     );
   }
 }
 
-export default Dashboard;
+export default DashSidebar;
