@@ -1,27 +1,47 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+import AboutMe from './components/AboutMe';
+import Contact from './components/Contact';
+import Dashboard from './components/Dashboard';
+import Footer from './components/Footer';
+import Gallery from './components/Gallery';
+import GallerySidebar from './components/GallerySidebar';
+import Home from './components/Home';
+import Login from './components/Login';
+import Navbar from './components/Navbar';
+
 
 class App extends Component {
   render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    );
+    const { pathname } = window.location
+    const params = pathname.substr(0)
+
+    if (params === '/') {
+      return (
+        <div>
+          <Navbar />
+          <Home />
+          <AboutMe />
+          <Contact />
+          <Footer />
+        </div>
+      )
+    } else if (params === '/gallery') {
+      return(
+        <div>
+          <Navbar />
+          <GallerySidebar />
+          <Gallery />
+        </div>
+      )
+    } else if (params ==='/admin/login') {
+      return <Login />
+    } else if (params ==='/admin/dashboard') {
+      return <Dashboard />
+    } else {
+      return <h1>Error</h1>
+    }
   }
 }
 
