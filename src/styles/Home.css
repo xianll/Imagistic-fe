@@ -14,9 +14,9 @@ margin: 0;
 
 #SplashLogo {
     float: left;
-    margin-top: 7vh;
+    margin-top: 5vh;
     margin-left: 5vw;
-    font-size: 60px;
+    font-size: 6em;
     letter-spacing: 10px;
     text-decoration: none;
     color: white;
