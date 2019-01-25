@@ -1,0 +1,36 @@
+body {
+margin: 0;
+
+}
+
+
+#SplashPage {
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Poppins', sans-serif;
+    background-repeat: none;
+    background-size: cover;
+}
+
+#SplashLogo {
+    float: left;
+    margin-top: 7vh;
+    margin-left: 5vw;
+    font-size: 60px;
+    letter-spacing: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.SplashNavLinks {
+    display: block;
+    width: 100px;
+    padding-top: 2vh;
+    position: relative;
+    top: 2vh;
+    left: 5vw;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+}
+

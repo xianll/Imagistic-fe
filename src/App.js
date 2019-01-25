@@ -25,7 +25,8 @@ class App extends Component {
           <Home />
         </>
       )
-    } else if (params === '/gallery') {
+    } 
+    else if (params === '/gallery') {
       return(
         <div>
           <Navbar />
@@ -33,16 +34,37 @@ class App extends Component {
           <Gallery />
         </div>
       )
-    } else if (params ==='/admin/login') {
+    } 
+    else if (params === '/about') {
+      return(
+        <div>
+          <Navbar />
+          <AboutMe />
+          <Footer />
+        </div>
+      )
+    } 
+    else if (params === '/contact') {
+      return(
+        <div>
+          <Navbar />
+          <Contact />
+          <Footer />
+      </div>
+      )
+    }
+    else if (params ==='/admin/login') {
       return <Login />
-    } else if (params ==='/admin/upload') {
+    } 
+    else if (params ==='/admin/upload') {
       return(
       <div>
         <DashSidebar />
         <Upload />
       </div>
       )
-    } else if (params === '/admin/manage') {
+    } 
+    else if (params === '/admin/manage') {
       return(
         <div>
           <DashSidebar />
