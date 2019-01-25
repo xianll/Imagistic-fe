@@ -1,0 +1,26 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    float: left;
+    margin-top: 5vh;
+    margin-left: 5vw;
+    font-size: 6em;
+    letter-spacing: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_links {
+    margin-right: 5%;
+    margin-top: 6.5%;
+}
+
+.nav_links a {
+    margin-right: 2em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: black;
+}
