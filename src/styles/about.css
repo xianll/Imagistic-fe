@@ -1,0 +1,128 @@
+body{
+  font-family: 'Poppins', sans-serif;
+  height: 100%;
+  width: 100vw;
+  margin: 0 auto;
+}
+.navBar{
+color: black;
+background-image: linear-gradient(#fa7268, #fafafa);
+height: 5em;
+}
+.logo {
+  margin-left: 2em;
+  padding-top: 1.0em;
+  font-size: 25px;
+  font-weight: 500;
+  letter-spacing: 0.5em;
+}
+.navBar a {
+  font-size: 18px;
+  font-weight: 550;
+  text-transform: uppercase;
+  text-decoration: none;
+  float: right;
+  margin: 0.7em;
+  margin-top: -2em;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 0.7s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.navBar a:hover {
+  background-color:orangered;
+}
+
+
+
+
+
+
+
+.aboutContainer {
+    display: flex;
+    flex-basis: calc(50% - 5px); 
+    /* flex-flow: wrap-reverse; */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100% !important;
+    padding-top: 8em;
+  
+}
+.aboutContainer .aboutPicture {
+  height: 20em;
+  width: 33em;
+  background-image: url(https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
+  background-size: cover;
+  background-position: 70% 50%;
+  box-sizing: border-box;
+}
+
+ .aboutContainer .aboutAbout { 
+   height: 20em;
+   width: 33em;
+  box-sizing: border-box;
+}
+
+.aboutTitle h1 {
+  font-size: 1.3em;
+  font-weight: 500;
+  text-align: left;
+  margin-top: -2em;
+  margin-left: 1em;
+  margin-bottom: -0.8em;
+}
+
+
+.aboutTitleLine {
+  position: relative;
+  margin-left: 1em;
+  margin-right: 0.9em;
+  padding-top: 0em;
+  margin-top: 0.9em;  
+  border-bottom: 2px solid #fa7268; 
+}
+
+p {
+  margin-top: 4em;
+  font-size: 0.75em;
+  margin-left: 3em;
+  margin-right: 1.5em;
+} 
+
+
+
+/* .aboutContainer { margin: 0px;}; */
+
+.footNote{
+  text-align: center;
+  margin-top: 15em;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* Portrait Settings */
+@media only screen and (max-width: 661px) {
+  .body{
+    height: 100vh;
+    margin: 0 auto;
+  }
+   
+  .aboutContainer {
+    margin-top: -5em;
+    height: 35em;
+    flex-flow: wrap-reverse;
+  }
+  .aboutTitle {
+    margin-top: 2em;
+  }
+  .footNote{
+    margin-top: 2.5em;
+  }
+
+
+}
