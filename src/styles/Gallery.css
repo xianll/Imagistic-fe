@@ -1,0 +1,35 @@
+.container {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 4px;
+  }
+
+  .column {
+    margin: 0;
+    flex: 32%;
+    max-width: 32%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-left: 0;
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
