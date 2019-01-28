@@ -29,9 +29,9 @@ class Home extends Component {
       
         <>
           <a id='SplashLogo' href='/'>IMAGISTIC</a>
-          <a className='SplashNavLinks' href='/Gallery'>GALLERY</a>
-          <a className='SplashNavLinks' href='/About'>ABOUT</a>
-          <a className='SplashNavLinks' href='/Contact'>CONTACT</a>
+          <a className='SplashNavLinks' href='/gallery'>GALLERY</a>
+          <a className='SplashNavLinks' href='/about'>ABOUT</a>
+          <a className='SplashNavLinks' href='/contact'>CONTACT</a>
         </>
       </div>
     );

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import AboutMe from './components/AboutMe';
+import AboutMe from './components/About';
 import Contact from './components/Contact';
 import DashSidebar from './components/DashSidebar';
 import Footer from './components/Footer';
@@ -14,8 +14,48 @@ import Navbar from './components/Navbar';
 import Upload from './components/Upload'
 
 
+
 class App extends Component {
+  state = {
+    background: [ 
+      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/divine_light.jpg',
+      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Pelican_Study.jpg',
+      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/_MG_5366.jpg',
+      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Theres_a_Sunset_Somewhere_x_3.jpg',
+      'https://res.cloudinary.com/dx0fhazu1/image/upload/v1548302393/Ignored.jpg'
+    ],
+  imgArr1: null,
+  imgArr2: null,
+  imgArr3: null
+}
+componentDidMount() {
+    const { background } = this.state
+    const imgCount = background.length
+    const imgArr1 =[]
+    const imgArr2 =[]
+    const imgArr3 =[]
+    for (let i = 0; i < imgCount;) {
+      if (i < imgCount) {
+        imgArr1.push(background[i])
+        i++
+      }
+      if (i < imgCount) {
+        imgArr2.push(background[i])
+        i++
+      }
+      if (i < imgCount) {
+        imgArr3.push(background[i])
+        i++
+      }
+    }
+    this.setState({ imgArr1, imgArr2, imgArr3 })
+  }
+
+
+
+
   render() {
+    const { imgArr1, imgArr2, imgArr3 } = this.state
     const { pathname } = window.location
     const params = pathname.substr(0)
 
@@ -31,11 +71,11 @@ class App extends Component {
         <div>
           <Navbar />
           <GallerySidebar />
-          <Gallery />
+          <Gallery imgArr1={imgArr1} imgArr2={imgArr2} imgArr3={imgArr3}/>
         </div>
       )
     } 
-    else if (params === '/about') {
+    else if (params === '/About') {
       return(
         <div>
           <Navbar />
