@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-
+import '../styles/Navbar.css'
 
 class Navbar extends Component {
   render() {
@@ -10,8 +10,6 @@ class Navbar extends Component {
         </div>
         <a href="#">About</a>
         <a href="#">Gallery</a>
-        
-
       </div>
     );
   }
