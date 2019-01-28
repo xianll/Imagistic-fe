@@ -4,6 +4,7 @@ body{
   width: 100vw;
   margin: 0 auto;
 }
+/* start of Navbar */
 .navBar{
 color: black;
 background-image: linear-gradient(#fa7268, #fafafa);
@@ -21,101 +22,127 @@ height: 5em;
   font-weight: 550;
   text-transform: uppercase;
   text-decoration: none;
+  color: black;
   float: right;
   margin: 0.7em;
   margin-top: -2em;
   -webkit-transition: background-color 2s ease-out;
   -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 0.7s ease-out;
+  -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
+  /* -webkit-transition: color 2s ease-out;
+  -moz-transition: color 2s ease-out;
+  -o-transition: color 2s ease-out;
+  transition: color 2s ease-out; */
 }
 
 .navBar a:hover {
   background-color:orangered;
+  color: white;
 }
+/* End of Navbar */
 
 
-
-
-
-
-
-.aboutContainer {
+.contactContainer {
     display: flex;
     flex-basis: calc(50% - 5px); 
     /* flex-flow: wrap-reverse; */
     justify-content: space-around;
     align-items: flex-start;
     width: 100% !important;
-    padding-top: 8em;
+    padding-top: 5em;
+    text-align: center;
+
   
 }
-.aboutContainer .aboutPicture {
-  height: 20em;
+.contactContainer .contact {
+  height: 35em;
   width: 33em;
-  background-image: url(https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-size: cover;
-  background-position: 70% 50%;
+  background-color:lightgreen;
   box-sizing: border-box;
+  margin: 0 auto;
+  
+
 }
 
- .aboutContainer .aboutAbout { 
-   height: 20em;
-   width: 33em;
-  box-sizing: border-box;
-}
-
-.aboutTitle h1 {
+.contact h1 {
   font-size: 1.3em;
-  font-weight: 500;
+  font-weight: 10;
   text-align: left;
-  margin-top: -2em;
-  margin-left: 1em;
-  margin-bottom: -0.8em;
+ 
+}
+.contactContainer .contactTitleLine {
+border-bottom: 2px solid #fa7268;
 }
 
-
-.aboutTitleLine {
+.contactForm input, textarea {
   position: relative;
-  margin-left: 1em;
-  margin-right: 0.9em;
-  padding-top: 0em;
-  margin-top: 0.9em;  
-  border-bottom: 2px solid #fa7268; 
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #fa7268 1px;
+  font-size: 1.2em;
+  width: 20rem;
+  height: 5rem;
+}
+textarea{
+  font-size: 0.9em;
+  height: 8em;
 }
 
-p {
-  margin-top: 4em;
-  font-size: 0.75em;
-  margin-left: 3em;
-  margin-right: 1.5em;
+button {
+  border: none;
+  margin-top: 1.5rem;
+  width: 10rem;
+  height: 2.5rem;
+  border-radius: 0.9rem;
+  background-color: #fa7268;
+  font-size: 1.3em;
+  color: floralwhite;
+}
+
+@media only screen and (min-width: 662px) {
+.contactContainer .contactPictures { 
+   height: 35em;
+   width: 33em;
+   background-color: lightpink;
+   box-sizing: border-box;
 } 
+}
 
-
-
-.aboutContainer { margin: 0px; }
-.aboutPicture { background-color: blue; }
-/* .aboutAbout { background-color:#fafafa; } */
+/* .aboutContainer { margin: 0px;}; */
 
 .footNote{
   text-align: center;
-  margin-top: 15em;
+  margin-top: 3.9em;
 }
 
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
 
+/* Portrait Settings */
 @media only screen and (max-width: 661px) {
   .body{
     height: 100vh;
     margin: 0 auto;
   }
    
-  .aboutContainer {
+  /* .contactPictures {
     margin-top: -5em;
+    height: 0em;
     flex-flow: wrap-reverse;
+  } */
+  .contactForm {
+    margin-top: 2em;
+    height: 35em;
+    display: inline-block;
+    text-align: center;
   }
   .footNote{
-    margin-top: 2.5em;
+    margin-top: 3.5em;
   }
-
-
 }
