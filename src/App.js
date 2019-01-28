@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import './App.css';
-import AboutMe from './components/AboutMe';
+import AboutMe from './components/About';
 import Contact from './components/Contact';
 import DashSidebar from './components/DashSidebar';
 import Footer from './components/Footer';
@@ -75,7 +75,7 @@ componentDidMount() {
         </div>
       )
     } 
-    else if (params === '/about') {
+    else if (params === '/About') {
       return(
         <div>
           <Navbar />
