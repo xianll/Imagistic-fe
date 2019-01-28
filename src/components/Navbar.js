@@ -10,8 +10,6 @@ class Navbar extends Component {
         </div>
         <a href="#">About</a>
         <a href="#">Gallery</a>
-        
-
       </div>
     );
   }
