@@ -45,7 +45,7 @@ height: 5em;
     justify-content: space-around;
     align-items: flex-start;
     width: 100% !important;
-    padding-top: 8em;
+    padding-top: 5em;
   
 }
 .aboutContainer .aboutPicture {
@@ -111,7 +111,7 @@ p {
   }
    
   .aboutContainer {
-    margin-top: -5em;
+    margin-top: 5em;
     height: 33em;
     flex-flow: wrap-reverse;
   }
@@ -141,10 +141,12 @@ p {
   background: transparent;  /* optional: just make scrollbar invisible */
 }
 
+
 /* Landscape Settings */
 @media only screen and (max-height: 375px) {
   .body{
     height: 100vh;
+    width: 100vw;
     margin: 0 auto;
   }
    
