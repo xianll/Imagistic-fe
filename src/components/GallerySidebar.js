@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import '../styles/Gallery.css';
 
 
 class GallerySidebar extends Component {

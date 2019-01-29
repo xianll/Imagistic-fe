@@ -8,8 +8,18 @@ class Gallery extends Component {
     console.log(imgArr1)
     if(imgArr1) {
     return (
-      <div className="App">
-        <div className="container">
+      <div className="bigGalleryContainer">
+      <div className="gallerySideBar">
+      <strong>Album</strong>
+      <a href='#'>Album of the long lost lovers</a><br/>
+      <strong>tags:&ensp; &nbsp;</strong>
+      <a href='#'>drinks</a>,
+      <a href='#'>party</a>,
+      <a href='#'>nightlife</a>
+    
+      </div>
+        <div className="galleryPictureContainer">
+          
           <div className="column">
           {imgArr1.map((img, index) => {
             return (
@@ -39,5 +49,4 @@ class Gallery extends Component {
     }
   }
 }
-
 export default Gallery;
