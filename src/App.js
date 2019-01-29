@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import './App.css';
 import AboutMe from './components/About';
@@ -55,11 +56,15 @@ componentDidMount() {
 
 
   render() {
+    const { imgArr1, imgArr2, imgArr3 } = this.state
     return (
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Home} />
-          <Route exact path="/gallery" component={Gallery} />
+          <Route 
+          exact path="/gallery"
+          render={props => <Gallery {...props} imgArr1={imgArr1} imgArr2={imgArr2} imgArr3={imgArr3} />}
+          />
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/contact" component={Contact} />
           <Route exact path="/admin/login" component={Login} />
