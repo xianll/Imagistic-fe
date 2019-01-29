@@ -1,15 +1,17 @@
 body {
 margin: 0;
-
 }
 
 
 #SplashPage {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     font-family: 'Poppins', sans-serif;
     background-repeat: none;
     background-size: cover;
+    background-position: 40% 100%;
+    /* this will allow the object of the pictures centered */
+
 }
 
 #SplashLogo {
