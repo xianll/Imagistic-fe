@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { BrowserRouter, Route } from 'react-router-dom'
 
 import './App.css';
 import AboutMe from './components/About';
@@ -67,64 +68,82 @@ componentDidMount() {
 
   render() {
     const { imgArr1, imgArr2, imgArr3 } = this.state
-    const { pathname } = window.location
-    const params = pathname.substr(0)
+    return (
+      <BrowserRouter>
+        <div>
+          <Route exact path="/" component={Home} />
+          <Route 
+          exact path="/gallery"
+          render={props => <Gallery {...props} imgArr1={imgArr1} imgArr2={imgArr2} imgArr3={imgArr3} />}
+          />
+          <Route exact path="/about" component={AboutMe} />
+          <Route exact path="/contact" component={Contact} />
+          <Route exact path="/admin/login" component={Login} />
+          <Route exact path="/admin/upload" component={Upload} />
+          <Route exact path="/admin/manage" component={ManageImages} />
+        </div>
+      </BrowserRouter>
+    )
 
-    if (params === '/') {
-      return (
-        <>
-          <Home />
-        </>
-      )
-    } 
-    else if (params === '/gallery') {
-      return(
-        <div className="galleryBlanketContainer">
-          <Navbar />
-          {/* <GallerySidebar /> */}
-          <Gallery imgArr1={imgArr1} imgArr2={imgArr2} imgArr3={imgArr3}/>
-        </div>
-      )
-    } 
-    else if (params === '/about') {
-      return(
-        <div>
-          <Navbar />
-          <AboutMe />
-          <Footer />
-        </div>
-      )
-    } 
-    else if (params === '/contact') {
-      return(
-        <div>
-          <Navbar />
-          <Contact />
-          <Footer />
-      </div>
-      )
-    }
-    else if (params ==='/admin/login') {
-      return <Login />
-    } 
-    else if (params ==='/admin/upload') {
-      return(
-      <div>
-        <DashSidebar />
-        <Upload />
-      </div>
-      )
-    } 
-    else if (params === '/admin/manage') {
-      return(
-        <div>
-          <DashSidebar />
-          <ManageImages />
-        </div>
-      )
-    } else {
-      return <h1>Error</h1>
-    }
+    // const { imgArr1, imgArr2, imgArr3 } = this.state
+    // const { pathname } = window.location
+    // const params = pathname.substr(0)
+
+    // if (params === '/') {
+    //   return (
+    //     <>
+    //       <Home />
+    //     </>
+    //   )
+    // } 
+    // else if (params === '/gallery') {
+    //   return(
+    //     <div>
+    //       <Navbar />
+    //       <GallerySidebar />
+    //       <Gallery imgArr1={imgArr1} imgArr2={imgArr2} imgArr3={imgArr3}/>
+    //     </div>
+    //   )
+    // } 
+    // else if (params === '/about') {
+    //   return(
+    //     <div>
+    //       <Navbar />
+    //       <AboutMe />
+    //       <Footer />
+    //     </div>
+    //   )
+    // } 
+    // else if (params === '/contact') {
+    //   return(
+    //     <div>
+    //       <Navbar />
+    //       <Contact />
+    //       <Footer />
+    //   </div>
+    //   )
+    // }
+    // else if (params ==='/admin/login') {
+    //   return <Login />
+    // } 
+    // else if (params ==='/admin/upload') {
+    //   return(
+    //   <div>
+    //     <DashSidebar />
+    //     <Upload />
+    //   </div>
+    //   )
+    // } 
+    // else if (params === '/admin/manage') {
+    //   return(
+    //     <div>
+    //       <DashSidebar />
+    //       <ManageImages />
+    //     </div>
+    //   )
+    // } else {
+    //   return <h1>Error</h1>
+    // }
   }
 }
 
