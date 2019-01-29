@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Navbar from './Navbar';
 import '../styles/Gallery.css';
 
 class Gallery extends Component {
@@ -9,6 +10,9 @@ class Gallery extends Component {
     if(imgArr1) {
     return (
       <div className="App">
+        <nav>
+          <Navbar />
+        </nav>
         <div className="container">
           <div className="column">
           {imgArr1.map((img, index) => {
