@@ -8,8 +8,9 @@ class Navbar extends Component {
         <div className="logo">
         IMAGISTIC
         </div>
-        <a href="#">About</a>
-        <a href="#">Gallery</a>
+        <a href="/gallery">GALLERY</a>
+        <a href="/about">ABOUT</a>
+        <a href="/contact">CONTACT</a>
       </div>
     );
   }

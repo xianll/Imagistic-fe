@@ -75,7 +75,7 @@ componentDidMount() {
         </div>
       )
     } 
-    else if (params === '/About') {
+    else if (params === '/about') {
       return(
         <div>
           <Navbar />
