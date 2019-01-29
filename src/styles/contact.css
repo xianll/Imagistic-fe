@@ -4,44 +4,6 @@ body{
   width: 100vw;
   margin: 0 auto;
 }
-/* start of Navbar */
-.navBar{
-color: black;
-background-image: linear-gradient(#fa7268, #fafafa);
-height: 5em;
-}
-.logo {
-  margin-left: 2em;
-  padding-top: 1.0em;
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: 0.5em;
-}
-.navBar a {
-  font-size: 18px;
-  font-weight: 550;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  float: right;
-  margin: 0.7em;
-  margin-top: -2em;
-  -webkit-transition: background-color 2s ease-out;
-  -moz-transition: background-color 2s ease-out;
-  -o-transition: background-color 2s ease-out;
-  transition: background-color 2s ease-out;
-  /* -webkit-transition: color 2s ease-out;
-  -moz-transition: color 2s ease-out;
-  -o-transition: color 2s ease-out;
-  transition: color 2s ease-out; */
-}
-
-.navBar a:hover {
-  background-color:orangered;
-  color: white;
-}
-/* End of Navbar */
-
 
 .contactContainer {
     display: flex;
@@ -52,25 +14,22 @@ height: 5em;
     width: 100% !important;
     padding-top: 5em;
     text-align: center;
-
-  
 }
+
 .contactContainer .contact {
   height: 35em;
   width: 33em;
   background-color:lightgreen;
   box-sizing: border-box;
   margin: 0 auto;
-  
-
 }
 
 .contact h1 {
   font-size: 1.3em;
   font-weight: 10;
   text-align: left;
- 
 }
+
 .contactContainer .contactTitleLine {
 border-bottom: 2px solid #fa7268;
 }

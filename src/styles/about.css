@@ -4,14 +4,14 @@ body{
   width: 100vw;
   margin: 0 auto;
 }
-.navBar{
+/* .navBar{
 color: black;
 background-image: linear-gradient(#fa7268, #fafafa);
 height: 5em;
 }
 .logo {
   margin-left: 2em;
-  padding-top: 1.0em;
+  padding-top: 0.1em;
   font-size: 25px;
   font-weight: 500;
   letter-spacing: 0.5em;
@@ -24,7 +24,7 @@ height: 5em;
   color: black;
   float: right;
   margin: 0.7em;
-  margin-top: -2em;
+  margin-top:;
   -webkit-transition: background-color 0.7s ease-out;
   -moz-transition: background-color 0.7s ease-out;
   -o-transition: background-color 0.7s ease-out;
@@ -35,7 +35,7 @@ height: 5em;
 .navBar a:hover {
   background-color:orangered;
   color: white;
-}
+} */
 
 
 .aboutContainer {
@@ -122,5 +122,47 @@ p {
     margin-top: 2.5em;
   }
 
+  ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
+
+}
+
+/* .aboutContainer { margin: 0px;}; */
+
+.footNote{
+  text-align: center;
+  margin-top: 15em;
+}
+
+::-webkit-scrollbar {
+  width: 0px;  /* remove scrollbar space */
+  background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+/* Landscape Settings */
+@media only screen and (max-height: 375px) {
+  .body{
+    height: 100vh;
+    margin: 0 auto;
+  }
+   
+  .aboutContainer {
+    margin-top: -5em;
+    height: 29em;
+    flex-flow: wrap-reverse;
+  }
+  .aboutTitle {
+    margin-top: 2em;
+  }
+  .footNote{
+    margin-top: 2.5em;
+  }
+
+  ::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+  }
 
 }
