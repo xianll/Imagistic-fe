@@ -13,6 +13,9 @@ class Gallery extends Component {
           <Navbar />
         </nav>
         <div className="container">
+          <div className="gallerySideBar">
+          </div>
+
           <div className="column">
           {imgArr1.map((img, index) => {
             return (
