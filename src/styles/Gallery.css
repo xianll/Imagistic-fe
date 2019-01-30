@@ -18,19 +18,8 @@ body {
   background-color: teal;
   width: 20vw;;
   height: 80vh;
-
   overflow-wrap: break-word;
-
 }
-.column {
-
-    margin: 0;
-    width: 100;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  
-  }
  
   .column {
     margin: 0.08em;

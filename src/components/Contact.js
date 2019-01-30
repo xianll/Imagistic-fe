@@ -39,10 +39,6 @@ class Contact extends Component {
 
         </div>
 
-
-
-
-
         <footer>
           <Footer />
         </footer>
