@@ -33,7 +33,7 @@ h1 {
   height: 4rem;
 }
 
-button {
+#loginButton {
   border: none;
   margin-top: 1.5rem;
   width: 10rem;
@@ -42,4 +42,13 @@ button {
   background-color: #fa7268;
   font-size: 1.3em;
   color: floralwhite;
+}
+#loginButton:hover {
+  transition: .5s ease-in-out;
+  color: black;
+}
+
+#errorMessage {
+  color: red;
+  font-size: 1em;
 }
