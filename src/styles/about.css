@@ -105,9 +105,11 @@ p {
 }
 
 /* Portrait Settings */
+/* Portrait Settings */
 @media only screen and (max-width: 661px) {
   .body{
     height: 100vh;
+    width: 100vw;
     margin: 0 auto;
   }
    

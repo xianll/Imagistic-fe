@@ -9,9 +9,11 @@ class Navbar extends Component {
         <div className="logo">
         IMAGISTIC
         </div>
-        <Link to="/gallery">GALLERY</Link>
-        <Link to="/about">ABOUT</Link>
-        <Link to="/contact">CONTACT</Link>
+        
+          <Link to="/gallery" className="navBarLinks">GALLERY</Link>
+          <Link to="/about" className="navBarLinks">ABOUT</Link>
+          <Link to="/contact" className="navBarLinks">CONTACT</Link>
+        
       </div>
     );
   }
