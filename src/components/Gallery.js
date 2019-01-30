@@ -5,8 +5,7 @@ import '../styles/Gallery.css';
 class Gallery extends Component {
 
   render() {
-    const { imgArr1, imgArr2, imgArr3 } = this.props
-    console.log(imgArr1)
+    const { imgArr1, imgArr2 } = this.props
     if(imgArr1) {
     return (
       <div className="App">
@@ -27,14 +26,7 @@ class Gallery extends Component {
               <img src={img} key={index}/>
             )
           })}
-            </div> 
-          <div className="column">
-          {imgArr3.map((img, index) => {
-            return (
-              <img src={img} key={index}/>
-            )
-            })}
-            </div> 
+          </div> 
         </div>
       </div>
     );
