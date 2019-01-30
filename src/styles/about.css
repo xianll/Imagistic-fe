@@ -51,9 +51,9 @@ height: 5em;
 .aboutContainer .aboutPicture {
   height: 20em;
   width: 33em;
-  background-image: url(https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260);
-  background-size: cover;
-  background-position: 70% 50%;
+   background-image: url('https://www.imagistic.com.au/img/s/v-5/u885882931-o695099713-53.jpg');/*(https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
+  background-size:  cover;
+  background-position: 50% 30%;
   box-sizing: border-box;
 }
 
@@ -82,12 +82,12 @@ height: 5em;
   border-bottom: 2px solid #fa7268; 
 }
 
-p {
+/* p {
   margin-top: 4em;
   font-size: 0.75em;
   margin-left: 3em;
   margin-right: 1.5em;
-} 
+}  */
 
 
 
@@ -113,15 +113,29 @@ p {
   }
    
   .aboutContainer {
-    margin-top: 5em;
-    height: 33em;
+    margin-top: 3em;
+    padding-left: 2.5em;
+    height: 30em;
     flex-flow: wrap-reverse;
   }
   .aboutTitle {
     margin-top: 2em;
   }
+  .aboutPicture{
+    margin-top: -2em;
+    margin-bottom: -2em;
+  }
+  .aboutStories {
+    margin-top: 1em;
+    font-size: 0.75em;
+    margin-left: 3em;
+    margin-right: 1.5em;
+  } 
   .footNote{
+    
     margin-top: 2.5em;
+    text-align: center;
+    margin-left: 2em;
   }
 
   ::-webkit-scrollbar {
@@ -131,30 +145,25 @@ p {
 
 }
 
-/* .aboutContainer { margin: 0px;}; */
 
-.footNote{
-  text-align: center;
-  margin-top: 15em;
-}
 
 ::-webkit-scrollbar {
   width: 0px;  /* remove scrollbar space */
   background: transparent;  /* optional: just make scrollbar invisible */
-}
+} 
 
 
 /* Landscape Settings */
-@media only screen and (max-height: 375px) {
+@media only screen and (max-height: 414px) {
   .body{
-    height: 100vh;
+    height: 100%;
     width: 100vw;
     margin: 0 auto;
   }
    
   .aboutContainer {
-    margin-top: -5em;
-    height: 29em;
+    margin-top: 0em;
+    height: 36em;
     flex-flow: wrap-reverse;
   }
   .aboutTitle {

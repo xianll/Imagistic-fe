@@ -69,6 +69,7 @@ body {
     }
 
     .gallerySideBar {
+      display: none;
       position: absolute;
       left: 0;
       height: 0;
@@ -76,7 +77,10 @@ body {
       margin-left: 0em;
     }
 
-
+    .container{
+      margin-left: 2em;
+      width: 90vw;
+    }
     .column {
 
       margin-top: 1em;;
@@ -84,7 +88,7 @@ body {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      padding-left: px;
+      padding-left: 0em;
     }
     .column img{
       width: 100%;

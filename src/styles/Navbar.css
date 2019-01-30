@@ -34,6 +34,7 @@
 .navBarLinks {
   font-size: 18px;
   font-weight: 550;
+  text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -73,13 +74,21 @@
       
 }
     .navBarLinks {
-        font-size: 0.8em;
+        font-size: 1em;
         font-weight: 0;
-        
+        margin-top: 0.2em;
+        margin-left: -0.5em;
+        margin-right: 0.2em;
+        padding-right: 0em;
+        text-align: center;
         text-transform: uppercase;
         text-decoration: none;
         color: black;
-        
+        float: right;
+  -webkit-transition: background-color 2s ease-out;
+  -moz-transition: background-color 2s ease-out;
+  -o-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
     }
 
 
