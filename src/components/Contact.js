@@ -9,7 +9,7 @@ class Contact extends Component {
         <nav>
           <Navbar />
         </nav>
-        This is the Contact Page.
+        
 
         <footer>
           <Footer />
