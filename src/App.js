@@ -45,7 +45,6 @@ componentDidMount() {
     const imgCount = background.length
     const imgArr1 =[]
     const imgArr2 =[]
-    const imgArr3 =[]
     for (let i = 0; i < imgCount;) {
       if (i < imgCount) {
         imgArr1.push(background[i])
@@ -55,26 +54,22 @@ componentDidMount() {
         imgArr2.push(background[i])
         i++
       }
-      if (i < imgCount) {
-        imgArr3.push(background[i])
-        i++
-      }
     }
-    this.setState({ imgArr1, imgArr2, imgArr3 })
+    this.setState({ imgArr1, imgArr2 })
   }
 
 
 
 
   render() {
-    const { imgArr1, imgArr2, imgArr3 } = this.state
+    const { imgArr1, imgArr2 } = this.state
     return (
       <BrowserRouter>
         <div>
           <Route exact path="/" component={Home} />
           <Route 
           exact path="/gallery"
-          render={props => <Gallery {...props} imgArr1={imgArr1} imgArr2={imgArr2} imgArr3={imgArr3} />}
+          render={props => <Gallery {...props} imgArr1={imgArr1} imgArr2={imgArr2} />}
           />
           <Route exact path="/about" component={AboutMe} />
           <Route exact path="/contact" component={Contact} />
