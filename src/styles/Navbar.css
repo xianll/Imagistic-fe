@@ -59,6 +59,7 @@
 @media only screen and (max-width: 661px) {
     .body{
       height: 100vh;
+      width: 100vw;
       margin: 0 auto;
     }
 
@@ -79,9 +80,6 @@
         text-decoration: none;
         color: black;
         
-        margin-left: -0.8em;
-        margin-top: 0em;
-        margin-right: -0.8em;
     }
 
 
