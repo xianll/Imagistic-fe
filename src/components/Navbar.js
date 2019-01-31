@@ -10,9 +10,9 @@ class Navbar extends Component {
         IMAGISTIC
         </div>
         
-          <Link to="/gallery" className="navBarLinks">GALLERY</Link>
-          <Link to="/about" className="navBarLinks">ABOUT</Link>
           <Link to="/contact" className="navBarLinks">CONTACT</Link>
+          <Link to="/about" className="navBarLinks">ABOUT</Link>
+          <Link to="/gallery" className="navBarLinks">GALLERY</Link>
         
       </div>
     );

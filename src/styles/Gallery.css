@@ -46,7 +46,7 @@ body {
     } 
 
     .column {
-      display: flex;
+      /* display: flex; */
       width: 100%;
       flex: 100%;
       flex-wrap: wrap;
@@ -58,7 +58,16 @@ body {
     }
     .column img{
       width: 100%;
-    }  
+    }
+
+    .gallerySideBar {
+      display: none;
+      position: absolute;
+      left: 0;
+      height: 0;
+      text-align: left;
+      margin-left: 0em;
+    }
   }
     /* .gallerySideBar{
       position: -webkit-sticky;  
