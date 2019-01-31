@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import '../styles/upload.css';
 import DashSidebar from './DashSidebar';
 import AdminHeader from './AdminHeader';
+import axios from 'axios';
 
 class Upload extends Component {
   state = {
@@ -27,7 +28,14 @@ class Upload extends Component {
   };
 
   submitForm = (e) => {
-    
+    e.preventDefault();
+    const data = new FormData();
+    const url = 'http://localhost:5000/auth/photo/upload'
+    console.log(e.target.myImage.files[0])
+    data.append('file', e.target.myImage.files[0]);
+    axios.post(url, data)
+      .then(res => console.log(res))
+      .catch(err => console.log(err))
   };
 
   render() {
@@ -37,10 +45,10 @@ class Upload extends Component {
           <AdminHeader/>
           <DashSidebar/>
         
-        <form className="uploadForm">
+        <form onSubmit={this.submitForm} className="uploadForm" encType="multipart/form-data">
           <label className="uploadFormLabels">Select Image to Upload</label>
           <br/>
-          <input type="file" accept="image/*" className="uploadFormInputs"/>
+          <input type="file" name="myImage" id="myImage" accept="image/*" className="uploadFormInputs"/>
           <br/>
           <label className="uploadFormLabels">Title : </label>
           <br/>
@@ -55,11 +63,11 @@ class Upload extends Component {
             return <span className="tagSpan" key={index}>{tag}</span>
           })}
           <br />
-          <input className="uploadFormInputs" type="tags" onChange={this.tagHandler} value={this.state.tag} name="Tags" required/>
+          <input className="uploadFormInputs" type="tags" onChange={this.tagHandler} value={this.state.tag} name="Tags"/>
           
           <button onClick={this.addTag} id="tagSubmit">+</button>
           <br/>
-          <button onClick={this.submitForm} id="sumbitForm">Submit</button>
+          <input type="submit" value="submit" id="sumbitForm" />
 
         </form> 
       </div>
