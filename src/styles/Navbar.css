@@ -57,13 +57,17 @@
 } 
 /* End of Navbar */
 
+
+/* portrait */
 @media only screen and (max-width: 661px) {
     .body{
-      height: 100vh;
+      height: 100%;
       width: 100vw;
       margin: 0 auto;
     }
-
+    .navBar{
+        width: 100vw;
+    }
     .logo {
         width: 100vw;
         text-align: center;
@@ -71,13 +75,12 @@
         font-size: 2.5em;
         font-weight: 700;
         letter-spacing: 0em;
-      
 }
     .navBarLinks {
         font-size: 1em;
         font-weight: 0;
-        margin-top: 0.2em;
-        margin-left: -0.5em;
+        margin-top: 0.1em;
+        margin-left: -1em;
         margin-right: 0.2em;
         padding-right: 0em;
         text-align: center;
@@ -90,6 +93,45 @@
   -o-transition: background-color 2s ease-out;
   transition: background-color 2s ease-out;
     }
+
+}
+
+/* Landscape */
+@media only screen and (max-height: 414px) {
+    .body{
+      height: 100%;
+      width: 100vw;
+      margin: 0 auto;
+    }
+    .logo {
+        width: 100vw;
+        text-align: left;
+        margin-top: 0.1em;
+        margin-left: 0.3em;
+        font-size: 2.5em;
+        font-weight: 700;
+        letter-spacing: 0em; 
+    }
+    .navBarLinks {
+        font-size: 1em;
+        font-weight: 0;
+        margin-top: -2em;
+        margin-left: 0.5em;
+        margin-right: 0.2em;
+        padding-right: 0em;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: black;
+        float: right;
+    -webkit-transition: background-color 2s ease-out;
+    -moz-transition: background-color 2s ease-out;
+    -o-transition: background-color 2s ease-out;
+    transition: background-color 2s ease-out;
+    }
+
+
+
 
 
 

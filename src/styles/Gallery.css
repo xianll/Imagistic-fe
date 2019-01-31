@@ -1,5 +1,5 @@
 body {
-  /* height: 100%; */
+  height: 100%;
   width: 100vw;
 }
 .container {
@@ -16,7 +16,7 @@ body {
   top: 10px;
   margin: 0.1em;
   background-color: teal;
-  width: 20vw;;
+  width: 20vw;
   height: 80vh;
   overflow-wrap: break-word;
 }
@@ -30,32 +30,45 @@ body {
   
   .column img {
     vertical-align: middle;
-    width: 100%;
+    width: 80%;
     margin: 0.1em;
+    margin-left: 20em;
   }
 
-  /* @media screen and (max-width: 800px) {
-    .column {
-      flex: 40%;
-      max-width: 33vw;
-    }
-  } */
-
-  @media screen and (max-width: 600px) {
-    .column {
-      margin-right: 0em;
-      flex: 100%;
+  @media screen and (max-width: 661px) {
+    .container {
+      display: flex;
       width: 100vw;
+      flex-wrap: column;
+      margin-top: 0em;
+      margin-left: 0em;
+      margin-right: 0em;
+    } 
+
+    .column {
+      display: flex;
+      width: 100%;
+      flex: 100%;
+      flex-wrap: wrap;
+      width: 100vw;
+      margin-top: 0em;
+      margin-right: 0em;
+      padding-left: 0em;
+      justify-content: space-between;
     }
-    .gallerySideBar{
-      /* position: -webkit-sticky;  
+    .column img{
+      width: 100%;
+    }  
+  }
+    /* .gallerySideBar{
+      position: -webkit-sticky;  
       position: sticky;
       top: 10px;
       background-color: lightcoral;
       flex-wrap: wrap;
       width: 20em;
-      height: 30vh; */
-    }
+      height: 30vh;
+    } */
 
     .gallerySideBar {
       display: none;
@@ -66,24 +79,4 @@ body {
       margin-left: 0em;
     }
 
-    .container{
-      margin-left: 2em;
-      width: 90vw;
-    }
-    .column {
-
-      margin-top: 1em;;
-      width: 100%;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      padding-left: 0em;
-    }
-    .column img{
-      width: 100%;
-    }  
-
-
-
-
-  }
+    

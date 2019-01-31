@@ -4,21 +4,29 @@ body{
   width: 100vw;
   margin: 0 auto;
 }
-
 .contactContainer {
-    display: flex;
-    flex-basis: calc(50% - 5px); 
-    /* flex-flow: wrap-reverse; */
-    justify-content: space-around;
-    align-items: flex-start;
-    width: 100% !important;
-    padding-top: 2em;
-    text-align: center;
-    margin-left: 0em;
+  display: flex;
+  flex-basis: calc(50% - 5px); 
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  width: 100% !important;
+  padding-top: 5em;
+}
+
+.contactPicture {
+  height: 30em;
+  width: 30em;
+  background-color:red;
+  box-sizing: border-box;
+  margin: 0 auto;
+  background-image: url('https://www.imagistic.com.au/img/s/v-5/u885882931-o695099713-53.jpg');
+  /* (../sampleGroupPic.png); */
+  background-size: cover;
 }
 
 .contact {
-  height: 40em;
+  height: 30em;
   width: 30em;
   background-color:lightgreen;
   box-sizing: border-box;
@@ -40,12 +48,11 @@ body{
   padding-top: 0em;
   margin-top: 0em;  
   border-bottom: 2px solid #fa7268;
-
 }
 
 .contactForm input {
   position: relative;
-  display: inline-block;
+  display: block;
   margin: 0 auto;
   text-align: center;
   background-color: transparent;
@@ -53,18 +60,21 @@ body{
   border-bottom: solid #fa7268 1px;
   font-size: 1.2em;
   width: 15em;
-  height: 8rem;
+  height: 3em;
 } 
  textarea {
    position: relative;
+  font-family: 'Poppins', sans-serif;
+   display: inline-block;
   font-size: 0.9em;
-  height: 8em;
-  width: 20em;
+  height: 5em;
+  width: 18em;
   text-align: center;
   font-size: 1.2em;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fa7268;
+  margin-left: 3.5em;
 } 
 
 button {
@@ -77,32 +87,10 @@ button {
   font-size: 1.3em;
   color: floralwhite;
 }
-.contactPicture {
-  height: 40em;
-  width: 30em;
-  background-color:red;
-  box-sizing: border-box;
-  margin: 0 auto;
-  background-image: url(../sampleGroupPic.png);
-  background-size: cover;
-}
-
-
-/* 
-@media only screen and (min-width: 600px) {
-.contactContainer .contactPicture { 
-   height: 35em;
-   width: 33em;
-   background-color: lightpink;
-   box-sizing: border-box;
-}  
-}*/
-
-/* .aboutContainer { margin: 0px;}; */
 
 .footNote{
   text-align: center;
-  margin-top: 3.9em;
+  margin-top: 5em;
 }
 
 ::-webkit-scrollbar {
@@ -110,18 +98,29 @@ button {
   background: transparent;  /* optional: just make scrollbar invisible */
 }
 
-
-
 /* Portrait Settings */
-@media only screen and (max-width: 1020px) {
+@media only screen and (max-width: 661px) {
   .body{
     height: 100vh;
     margin: 0 auto;
   }
+  
+  .contactContainer {
+    display: flex;
+    flex-basis: calc(50% - 5px); 
+    /* flex-flow: wrap-reverse; */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100% !important;
+    padding-top: 2em;
+    text-align: center;
+    margin-left: 0em;
+}
+
   .contact { 
-    height: 33em;
+    height: 35em;
     width: 33em;
-    background-color: lightpink;
+    margin-top: -2em;
     box-sizing: border-box;
  }  
  
@@ -137,13 +136,16 @@ button {
   width: 15em;
   height: 5rem;
 } 
+
  textarea {
-   position: relative;
-  font-size: 0.9em;
-  height: 8em;
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 2em;
+  height: 6em;
   width: 20em;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1.0em;
   background-color: transparent;
   border: none;
   border-bottom: 1px solid #fa7268;
@@ -156,25 +158,71 @@ button {
     flex-flow: wrap-reverse;
   }
 
-/* @media only screen and (max-width: 661px) {
+  .footNote{
+    margin-top: 2.9em;
+  }
+}
+
+/* mid portrait Settings */
+@media only screen and (max-width: 1000px) {
   .body{
     height: 100vh;
     margin: 0 auto;
   }
-   
+  .contactContainer {
+    display: flex;
+    flex-basis: calc(50% - 5px); 
+    /* flex-flow: wrap-reverse; */
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100% !important;
+    padding-top: 2em;
+    text-align: center;
+    margin-left: 0em;
+}
+
+  .contact { 
+    height: 35em;
+    width: 33em;
+    margin-top: -2em;
+    box-sizing: border-box;
+ }  
+ 
+.contactForm input {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
+  background-color: transparent;
+  border: none;
+  border-bottom: solid #fa7268 1px;
+  font-size: 1.2em;
+  width: 15em;
+  height: 5rem;
+} 
+
+ textarea {
+  position: relative;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  padding-top: 2em;
+  height: 6em;
+  width: 20em;
+  text-align: center;
+  font-size: 1.0em;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fa7268;
+} 
+
   .contactPicture {
     display: none;
     margin-top: 0em;
     height: 0em;
     flex-flow: wrap-reverse;
-  } */
-  .contactForm {
-    margin-top: 2em;
-    height: 20em;
-    display: inline-block;
-    text-align: center;
   }
+
   .footNote{
-    margin-top: 2.5em;
+    margin-top: 7.5em;
   }
 }

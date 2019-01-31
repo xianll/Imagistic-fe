@@ -4,66 +4,34 @@ body{
   width: 100vw;
   margin: 0 auto;
 }
-/* .navBar{
-color: black;
-background-image: linear-gradient(#fa7268, #fafafa);
-height: 5em;
-}
-.logo {
-  margin-left: 2em;
-  padding-top: 0.1em;
-  font-size: 25px;
-  font-weight: 500;
-  letter-spacing: 0.5em;
-}
-.navBar a {
-  font-size: 18px;
-  font-weight: 550;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: black;
-  float: right;
-  margin: 0.7em;
-  margin-top:;
-  -webkit-transition: background-color 0.7s ease-out;
-  -moz-transition: background-color 0.7s ease-out;
-  -o-transition: background-color 0.7s ease-out;
-  transition: background-color 0.7s ease-out;
-  
-}
-
-.navBar a:hover {
-  background-color:orangered;
-  color: white;
-} */
-
 
 .aboutContainer {
     display: flex;
     flex-basis: calc(50% - 5px); 
-    /* flex-flow: wrap-reverse; */
+    flex-flow: wrap-reverse;
     justify-content: space-around;
     align-items: flex-start;
     width: 100% !important;
-    padding-top: 5em;
-  
+    padding-top: 2em;
 }
-.aboutContainer .aboutPicture {
-  height: 20em;
+.aboutPicture {
+  margin-top: -3.5em;
+  height: 30em;
   width: 33em;
    background-image: url('https://www.imagistic.com.au/img/s/v-5/u885882931-o695099713-53.jpg');/*(https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
   background-size:  cover;
-  background-position: 50% 30%;
+  background-position: 100% 18%;
   box-sizing: border-box;
 }
 
  .aboutContainer .aboutAbout { 
-   height: 20em;
-   width: 33em;
+   height: 12em;
+   width: 100vw;
   box-sizing: border-box;
 }
 
 .aboutTitle h1 {
+  position: relative;
   font-size: 1.3em;
   font-weight: 500;
   text-align: left;
@@ -71,7 +39,6 @@ height: 5em;
   margin-left: 1em;
   margin-bottom: -0.8em;
 }
-
 
 .aboutTitleLine {
   position: relative;
@@ -82,20 +49,16 @@ height: 5em;
   border-bottom: 2px solid #fa7268; 
 }
 
-/* p {
-  margin-top: 4em;
+.aboutStories {
+  margin-top: 1em;
   font-size: 0.75em;
-  margin-left: 3em;
+  margin-left: 1em;
   margin-right: 1.5em;
-}  */
-
-
-
-/* .aboutContainer { margin: 0px;}; */
+} 
 
 .footNote{
   text-align: center;
-  margin-top: 15em;
+  margin-top: -2em;
 }
 
 ::-webkit-scrollbar {
@@ -111,29 +74,39 @@ height: 5em;
     width: 100vw;
     margin: 0 auto;
   }
+  .pageContainer{
+    width:100vw;
+  }
    
   .aboutContainer {
-    margin-top: 3em;
-    padding-left: 2.5em;
+    margin-top: 7em;
+    padding-left: 0em;
     height: 30em;
     flex-flow: wrap-reverse;
   }
+
   .aboutTitle {
-    margin-top: 2em;
+    margin-top: 3em;
+    margin-left: 0em;
   }
+
   .aboutPicture{
-    margin-top: -2em;
-    margin-bottom: -2em;
+    margin-top: 2.5em;
+    margin-bottom: 0em;
+    height: 25em;
   }
+
   .aboutStories {
-    margin-top: 1em;
+    margin-top: 0em;
     font-size: 0.75em;
-    margin-left: 3em;
+    margin-left: 1em;
     margin-right: 1.5em;
   } 
+
   .footNote{
-    
-    margin-top: 2.5em;
+
+    margin-top: 0em;
+    height: 5em;
     text-align: center;
     margin-left: 2em;
   }
@@ -142,17 +115,9 @@ height: 5em;
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
   }
-
 }
 
-
-
-::-webkit-scrollbar {
-  width: 0px;  /* remove scrollbar space */
-  background: transparent;  /* optional: just make scrollbar invisible */
-} 
-
-
+/* Landscape Settings */
 /* Landscape Settings */
 @media only screen and (max-height: 414px) {
   .body{
@@ -160,15 +125,46 @@ height: 5em;
     width: 100vw;
     margin: 0 auto;
   }
-   
+
+  .aboutPicture{
+   display: none;
+    margin-top: -3.5em;
+    margin-bottom: 0em;
+  }
+
+  .pageContainer{
+    width:100vw;
+  }
+
   .aboutContainer {
     margin-top: 0em;
-    height: 36em;
-    flex-flow: wrap-reverse;
+    margin-left: 1em;
+    height: 10em;
+    flex-flow: wrap;
   }
-  .aboutTitle {
-    margin-top: 2em;
+
+  .aboutTitle h1{
+    margin-top: 0em;
+    margin-left: 0em;
+    margin-top: -3em;
   }
+
+.aboutTitleLine {
+  position: relative;
+  margin-left: 0em;
+  margin-right: 0.9em;
+  padding-top: 0em;
+  margin-top: 0.9em;  
+  border-bottom: 2px solid #fa7268; 
+}
+
+.aboutStories {
+  margin-top: 1em;
+  font-size: 0.75em;
+  margin-left: 0.5em;
+  margin-right: 1.5em;
+} 
+
   .footNote{
     margin-top: 2.5em;
   }
@@ -177,5 +173,4 @@ height: 5em;
     width: 0px;  /* remove scrollbar space */
     background: transparent;  /* optional: just make scrollbar invisible */
   }
-
 }
