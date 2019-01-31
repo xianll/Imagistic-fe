@@ -171,10 +171,6 @@
     height: 0em;
     flex-flow: wrap-reverse;
   }
-
-  .contactFootNote{
-    /* margin-top: 2.9em; */
-  }
 }
 
 /* mid portrait Settings */
@@ -234,9 +230,5 @@
     margin-top: 0em;
     height: 0em;
     flex-flow: wrap-reverse;
-  }
-
-  .contactFootNote{
-    /* margin-top: 7.5em; */
   }
 }
