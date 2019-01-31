@@ -75,7 +75,7 @@ body{
   width: 15em;
   height: 3em;
 } 
- textarea {
+ .contactForm textarea {
    /* position: relative; */
   /* font-family: 'Poppins', sans-serif; */
    /* display: inline-block; */
@@ -89,7 +89,7 @@ body{
   /* margin-left: 6em; */
 } 
 
-button {
+.contactForm button {
   border: none;
   margin-top: 1.5rem;
   width: 10rem;
@@ -127,41 +127,41 @@ button {
     padding-top: 2em;
     text-align: center;
     margin-left: 0em;
-}
+  }
 
   .contact { 
     height: 35em;
     width: 33em;
     margin-top: -2em;
     box-sizing: border-box;
- }  
+  }
  
-.contactForm input {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  border-bottom: solid #fa7268 1px;
-  font-size: 1.2em;
-  width: 15em;
-  height: 5rem;
-} 
+  .contactForm input {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #fa7268 1px;
+    font-size: 1.2em;
+    width: 15em;
+    height: 5rem;
+  }
 
- textarea {
-  position: relative;
-  display: inline-block;
-  font-family: 'Poppins', sans-serif;
-  padding-top: 2em;
-  height: 6em;
-  width: 20em;
-  text-align: center;
-  font-size: 1.0em;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #fa7268;
-} 
+  .contactForm textarea {
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2em;
+    height: 6em;
+    width: 20em;
+    text-align: center;
+    font-size: 1.0em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fa7268;
+  }
 
   .contactPicture {
     display: none;
@@ -191,41 +191,41 @@ button {
     padding-top: 2em;
     text-align: center;
     margin-left: 0em;
-}
+  }
 
   .contact { 
     height: 35em;
     width: 33em;
     margin-top: -2em;
     box-sizing: border-box;
- }  
+  }
  
-.contactForm input {
-  position: relative;
-  display: inline-block;
-  margin: 0 auto;
-  text-align: center;
-  background-color: transparent;
-  border: none;
-  border-bottom: solid #fa7268 1px;
-  font-size: 1.2em;
-  width: 15em;
-  height: 5rem;
-} 
+  .contactForm input {
+    position: relative;
+    display: inline-block;
+    margin: 0 auto;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    border-bottom: solid #fa7268 1px;
+    font-size: 1.2em;
+    width: 15em;
+    height: 5rem;
+  } 
 
- textarea {
-  position: relative;
-  display: inline-block;
-  font-family: 'Poppins', sans-serif;
-  padding-top: 2em;
-  height: 6em;
-  width: 20em;
-  text-align: center;
-  font-size: 1.0em;
-  background-color: transparent;
-  border: none;
-  border-bottom: 1px solid #fa7268;
-} 
+  .contactForm textarea {
+    position: relative;
+    display: inline-block;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 2em;
+    height: 6em;
+    width: 20em;
+    text-align: center;
+    font-size: 1.0em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fa7268;
+  } 
 
   .contactPicture {
     display: none;
