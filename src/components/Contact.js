@@ -6,7 +6,7 @@ import '../styles/contact.css';
 class Contact extends Component {
   render() {
     return (
-      <div className="App">
+      <div className="contactPageContainer">
         <nav>
           <Navbar />
         </nav>
@@ -39,7 +39,7 @@ class Contact extends Component {
 
         </div>
 
-        <footer>
+        <footer className="contactFootNote">
           <Footer />
         </footer>
 
