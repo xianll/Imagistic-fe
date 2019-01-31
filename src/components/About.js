@@ -16,9 +16,6 @@ class About extends Component {
         <div class="aboutContainer">
         
           <div class="aboutPicture">
-            <div>
-
-            </div>
           </div>
         
           <div class="aboutAbout">

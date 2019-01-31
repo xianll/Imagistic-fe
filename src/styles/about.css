@@ -82,17 +82,14 @@
 /* Portrait Settings */
 /* Portrait Settings */
 @media only screen and (max-width: 661px) {
-  .body{
-    height: 100vh;
-    width: 100vw;
-    margin: 0 auto;
-  }
   .aboutPageContainer{
     width:100vw;
+    margin: 0;
   }
    
   .aboutContainer {
     margin-top: 0em;
+    margin-bottom: 8em; 
     padding-left: 0em;
     height: 30em;
     flex-flow: wrap-reverse;
@@ -100,7 +97,7 @@
   }
 
   .aboutTitle {
-    margin-top: 16em;
+    margin-top: 6em;
     margin-left: 0em;
   }
 
@@ -108,6 +105,7 @@
     margin-top: 0em;
     margin-bottom: -3em;
     height: 20em;
+    display: none;
   }
 
   .aboutStories {
@@ -121,7 +119,6 @@
     margin-top: 0em;
     height: 5em;
     text-align: center;
-    margin-left: 2em;
   }
 
   ::-webkit-scrollbar {
