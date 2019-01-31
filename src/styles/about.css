@@ -15,9 +15,9 @@ body{
     padding-top: 2em;
 }
 .aboutPicture {
-  margin-top: -3.5em;
+  margin-top: 0em;
   height: 30em;
-  width: 33em;
+  width: 30em;
    background-image: url('https://www.imagistic.com.au/img/s/v-5/u885882931-o695099713-53.jpg');/*(https://images.pexels.com/photos/326900/pexels-photo-326900.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260); */
   background-size:  cover;
   background-position: 100% 18%;
@@ -25,9 +25,11 @@ body{
 }
 
  .aboutContainer .aboutAbout { 
-   height: 12em;
-   width: 100vw;
+   margin-top: 5em;
+   height: 30em;
+   width: 30em;
   box-sizing: border-box;
+  /* background-color: blue; */
 }
 
 .aboutTitle h1 {
@@ -79,21 +81,22 @@ body{
   }
    
   .aboutContainer {
-    margin-top: 7em;
+    margin-top: 0em;
     padding-left: 0em;
     height: 30em;
     flex-flow: wrap-reverse;
+    /* background-color: blue; */
   }
 
   .aboutTitle {
-    margin-top: 3em;
+    margin-top: 16em;
     margin-left: 0em;
   }
 
   .aboutPicture{
-    margin-top: 2.5em;
-    margin-bottom: 0em;
-    height: 25em;
+    margin-top: 0em;
+    margin-bottom: -3em;
+    height: 20em;
   }
 
   .aboutStories {
@@ -104,7 +107,6 @@ body{
   } 
 
   .footNote{
-
     margin-top: 0em;
     height: 5em;
     text-align: center;
@@ -119,7 +121,7 @@ body{
 
 /* Landscape Settings */
 /* Landscape Settings */
-@media only screen and (max-height: 414px) {
+/* @media only screen and (max-height: 414px) {
   .body{
     height: 100%;
     width: 100vw;
@@ -171,6 +173,6 @@ body{
 
   ::-webkit-scrollbar {
     width: 0px;  /* remove scrollbar space */
-    background: transparent;  /* optional: just make scrollbar invisible */
-  }
-}
+    /* background: transparent;  optional: just make scrollbar invisible */
+  /* } */
+/* } */ 
