@@ -24,10 +24,10 @@ body{
   box-sizing: border-box;
 }
 
- .aboutContainer .aboutAbout { 
-   margin-top: 5em;
-   height: 30em;
-   width: 30em;
+.aboutContainer .aboutAbout { 
+  margin-top: 5em;
+  height: 30em;
+  width: 30em;
   box-sizing: border-box;
   /* background-color: blue; */
 }
