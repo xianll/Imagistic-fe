@@ -10,9 +10,13 @@ class Upload extends Component {
     selectedAlbumArray: []
   };
 
-  // componentDidlMount() {
-  //   axios.get
-  // }
+  componentDidMount() {
+    console.log('Hello world')
+    const logInCheckUrl = 'http://localhost:5000/auth/userloggedin'
+    axios.get(logInCheckUrl)
+      .then(res => console.log(res))
+      .catch(err => this.props.history.push('/admin/login'))
+  }
 
   addAlbum = (e) => {
     e.preventDefault()
