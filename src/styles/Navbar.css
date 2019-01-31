@@ -7,14 +7,14 @@
 /*} */
 
 .logo {
-    
-        margin-left: 1em;
-        padding-top: 0em;
-        font-size: 2em;
-        font-weight: 700;
-        letter-spacing: 0.5em;
-      
+    margin-top: 2.3em;
+    /* margin-left: 4.5em; */
+    /* padding-top: 0em; */
+    /* font-size: 2em; */
+    /* font-weight: 700; */
+    /* letter-spacing: 0.5em; */
 }
+
 /* 
 .nav_links {
     margin-right: 5%;
@@ -37,7 +37,7 @@
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
-  color: black;
+  color: #36454F;
   float: right;
   margin: 0.7em;
   margin-top: -1.5em;
@@ -51,11 +51,25 @@
   transition: color 2s ease-out; */
 }
 
-.navBar a:hover {
+.navBar .navBarLinks:hover {
   background-color:orangered;
   color: white;
 } 
+
+.imagisticLogo {
+    margin-top: 10em;
+    margin-left: 5vw;
+    font-size: 2.5em;
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-decoration: none;
+    color: #36454F;
+}
 /* End of Navbar */
+
+.footNote {
+    color: #36454F;
+}
 
 
 /* portrait */

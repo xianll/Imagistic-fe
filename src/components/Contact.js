@@ -13,7 +13,7 @@ class Contact extends Component {
         
         <div className="contactContainer">
             <div className="contact">
-                <h1>CONTACT</h1>
+                <p className="contactHeading">CONTACT</p>
           
                 <div className="contactTitleLine">
                 </div>

@@ -7,7 +7,7 @@ class Navbar extends Component {
     return (
       <div className="navBar">
         <div className="logo">
-        IMAGISTIC
+          <Link to="/" className="imagisticLogo">IMAGISTIC</Link>
         </div>
         
           <Link to="/contact" className="navBarLinks">CONTACT</Link>
